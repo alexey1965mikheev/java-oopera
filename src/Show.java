@@ -25,7 +25,7 @@ public class Show {
     public void replaceActor(String surname, Actor newActor) {
         for (int i = 0; i < listOfActors.size(); i++) {
             Actor actor = listOfActors.get(i);
-            if (actor.getSurname().equals(surname)) {
+            if (actor.getSurname().equalsIgnoreCase(surname)) {
                 listOfActors.set(i, newActor);
                 System.out.println("\nАктёр " + surname + " в спектакле \"" + title + "\" заменен на актера " + newActor + ".");
                 return;

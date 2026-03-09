@@ -8,9 +8,9 @@ public class Theatre {
         Director director1 = new Director("Андрей", "Петров", Gender.MALE, 23);
         Director director2 = new Director("Кирилл", "Серебренников", Gender.MALE, 75);
         // Создаем автора музыки
-        String musicAuthor = "Петр Чайковский";
+        Person musicAuthor = new Person("Петр", "Чайковский", Gender.MALE);
         // Создаем хореографа
-        String choreographer = "Николай Цискаридзе";
+        Person choreographer = new Person("Николай", "Цискаридзе", Gender.MALE);
         // Создаем спектакли
         Show show = new Show("Обычная пьеса", 90, director2);
 
